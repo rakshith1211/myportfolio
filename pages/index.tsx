@@ -10,16 +10,15 @@ export default function Home() {
     'Jupyter Notebook', 'VS Code', 'Burp Suite', 'Wireshark'
   ]
 
-  const [repos, setRepos] = useState([])
+  const [repos, setRepos] = useState<any[]>([])
 
-  
   useEffect(() => {
     fetch('https://api.github.com/users/rakshith1211/repos')
       .then((res) => res.json())
       .then((data) => {
         const filtered = data
-          .filter((repo) => !repo.fork)
-          .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+          .filter((repo: any) => !repo.fork)
+          .sort((a: any, b: any) => new Date(b.updated_at).getTime() - new Date(a.updated_at).getTime())
         setRepos(filtered)
       })
   }, [])
