@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce application with React, Node.js, and MongoDB",
+    "technologies": ["React", "Node.js", "MongoDB", "Express"],
+    "github": "https://github.com/yourusername/ecommerce-platform",
+    "demo": "https://your-ecommerce-demo.vercel.app"
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "Collaborative task management tool with real-time updates",
+    "technologies": ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+    "github": "https://github.com/yourusername/task-manager",
+    "demo": "https://your-task-manager.vercel.app"
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "description": "Real-time weather application with location-based forecasts",
+    "technologies": ["React", "API Integration", "Chart.js"],
+    "github": "https://github.com/yourusername/weather-dashboard",
+    "demo": "https://your-weather-app.vercel.app"
+  }
+]
